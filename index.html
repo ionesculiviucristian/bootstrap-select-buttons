@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap Select List examples</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-select-list.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="bootstrap-select-list.js"></script>
+  </head>
+
+  <body>
+    <select class="form-control">
+      <option value="1">#1</option>
+      <option value="2">#2</option>
+      <option value="3">#3</option>
+      <option value="4">#4</option>
+      <option value="5">#5</option>
+    </select>
+
+    <select class="form-control">
+      <option value="a">#a</option>
+      <option value="b">#b</option>
+      <option value="c">#c</option>
+      <option value="d">#d</option>
+      <option value="e">#e</option>
+    </select>
+
+    <script>
+      $(function() {
+        $('select').bootstrapSelectList({
+          onClick: function(btn) {
+            console.log(btn);
+          }
+        });
+      })
+    </script>
+  </body>
+</html>
