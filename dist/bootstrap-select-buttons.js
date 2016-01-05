@@ -25,7 +25,7 @@
             });
 
             // Create the wrapper for the buttons
-            var $wrapper = $('<div class="bootstrap-select-list"></div>').insertAfter($(this));
+            var $wrapper = $('<div class="bootstrap-select-list"></div>').insertAfter($this);
 
             // Add the buttons and bind them to the click event
             for (var count = 0; count < labels.length; count++) {
