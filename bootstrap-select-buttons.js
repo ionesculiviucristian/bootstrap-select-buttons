@@ -1,13 +1,13 @@
 ;(function($) {
     'use strict';
 
-    $.fn.bootstrapSelectList = function(options) {
+    $.fn.bootstrapSelectButtons = function(options) {
         // No suitable elements found
         if ($(this).length === 0) {
             return $(this);
         }
 
-        var opts = $.extend({}, $.fn.bootstrapSelectList.defaults, options || {});
+        var opts = $.extend({}, $.fn.bootstrapSelectButtons.defaults, options || {});
 
         $(this).each(function(i) {
             var $this = $(this);
@@ -52,7 +52,7 @@
     };
 
     // Default options
-    $.fn.bootstrapSelectList.defaults = {
+    $.fn.bootstrapSelectButtons.defaults = {
         onClick: function() { return true; }
     };
 })(jQuery);
